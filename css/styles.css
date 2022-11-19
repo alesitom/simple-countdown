@@ -1,0 +1,91 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&display=swap');
+
+/* general styling */
+:root {
+    --numbersFont:'Overpass Mono', monospace;
+    --mainBodyFont: 'Overpass', sans-serif;
+    --green900:#153C31;
+    --green700:#226350;
+    --green500:#2E896F;
+    --green300:#3AB18E;
+    --green100:#55C9A7;
+    --lightGrey:#F0F0F0;
+    --smaller: .75;
+}
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    background-color: var(--green900);
+    display: flex;
+    font-family: var(--mainBodyFont);
+}
+  
+.container {
+    color: var(--green300);
+    margin: 0 auto;
+    text-align: center;
+}
+  
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+  
+li {
+    display: inline-block;
+    font-size: 1.8em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+  
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+  
+.emoji {
+    display: none;
+    padding: 1rem;
+}
+  
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+  
+@media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+}
+
+.numbers{
+    font-family: var(--numbersFont);
+}
+
+.bold{
+    font-weight: 600;
+}
